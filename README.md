@@ -22,7 +22,7 @@ This is a Springboot application connecting to PostgreSQL run on docker compose 
 4. Explain pgadmin connection setup
 5. pgadmin takes time to load http://localhost:5050/browser/
    
-#References
+References
 * https://docs.docker.com/develop/develop-images/multistage-build/
 * https://stackoverflow.com/questions/27767264/how-to-dockerize-maven-project-and-how-many-ways-to-accomplish-it
 * https://dzone.com/articles/a-dockerfile-for-maven-based-github-projects
