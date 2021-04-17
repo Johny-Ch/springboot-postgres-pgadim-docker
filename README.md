@@ -5,11 +5,7 @@ This is a Springboot application connecting to PostgreSQL run on docker compose 
 1. Download and install [Docker Desktop] (https://www.docker.com/products/docker-desktop)
 2. Open [docker-compose.yml] (https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/docker-compose.yml) file
 3. Execute all services using docker-compose up at line 3
-
-# TODO
-1. Add Junits
-2. Update instructions to run project 
-3. Upload postman project export
+4. APIs to create and read data from postgres are
    * GET API - http://localhost:18080/getallemployees
    * POST API - http://localhost:18080/createEmployee
    ```
@@ -18,9 +14,13 @@ This is a Springboot application connecting to PostgreSQL run on docker compose 
         "lastName": "Desktop"
     }
    ```
-4. Explain ports used by all containers in this project
-5. Explain pgadmin connection setup
-6. Takes time to load http://localhost:5050/browser/
+
+# TODO
+1. Add Junits
+2. Update instructions to run project 
+3. Explain ports used by all containers in this project
+4. Explain pgadmin connection setup
+5. pgadmin takes time to load http://localhost:5050/browser/
    
 #References
 * https://docs.docker.com/develop/develop-images/multistage-build/
