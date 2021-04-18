@@ -60,7 +60,7 @@ This is a Springboot application
    3. We have preloaded the servers on to pgAdmin by using environment variable PGADMIN_SERVER_JSON_FILE and supplied servers [here](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/src/main/resources/postgres-servers.json)
    4. We are using default password as "changeme" to login to postgres database
    5. You can login to pgadming at http://localhost:5050/browser/ and browse as below
-      * ![Browser pgAdming](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/pgadmin-browser.png)
+      ![Browser pgAdming](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/pgadmin-browser.png)
 
 # PostgreSQL Username & Passwords
   * Username: postgres
@@ -68,8 +68,8 @@ This is a Springboot application
 
 # Dockerfiles
 We have two docker files in this application
-    1. Dockerfile-restapi
-    2. Dockerfile-pgadmin
+1. Dockerfile-restapi
+2. Dockerfile-pgadmin
 
 ## Dockerfile-restapi
 This file is used to run the maven build by copying the src directory containing all the java code and pom.xml file
@@ -80,9 +80,9 @@ This file is used to load pgadmin docker image and copy the postgres-servers.jso
 
 # Docker compose
 The docker compose file contains 3 services
-    1. restapi
-    2. pgadmin
-    3. postgres
+1. restapi
+2. pgadmin
+3. postgres
 
 ## restapi
 This service will invoke the Dockerfile-restapi and is dependent on postgres
@@ -99,7 +99,8 @@ This service will load postgre image and start the container running postgres da
   1. springboot-postgres-pgadim-docker
   2. pgadmin4   
   3. postgres
-     ![Docker Images](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/docker-downloaded-images.png)
+
+  ![Docker Images](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/docker-downloaded-images.png)
 
 # References
    * https://docs.docker.com/develop/develop-images/multistage-build/
