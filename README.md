@@ -1,4 +1,4 @@
-# springboot-postgres-pgadim-docker
+# springboot-postgres-pgadmin-docker
 This is a Springboot application running on docker
   * Contains a GET & POST APIs to create and read employees with first & last name fields
       *   POST API can be used to create employee with fields "firstName" & "lastName"
@@ -18,16 +18,16 @@ This is a Springboot application running on docker
    2. Download and install IntelliJ IDEA Community (Free, open-source) [here](https://www.jetbrains.com/idea/download/)
 
 # Executing Project
-   1. Clone the main branch of the project on to your working environment, [clone url](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker.git)
+   1. Clone the main branch of the project on to your working environment, [clone url](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker.git)
    2. Open cloned project in Intellij
-   3. Open [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/docker-compose.yml) file
-   4. Execute all services by clicking on two green arrows at line 3 in  [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/docker-compose.yml) file - aka `docker-compose up`
-      ![Execute all services](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/docker-compose.yml.png)
+   3. Open [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/docker-compose.yml) file
+   4. Execute all services by clicking on two green arrows at line 3 in  [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/docker-compose.yml) file - aka `docker-compose up`
+      ![Execute all services](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/images/docker-compose.yml.png)
    5. Verify if all the containers are up & running on you docker desktop, you see something like this
         * Screenshot of all containers running
-        * ![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/all-containers-running.png)
+        * ![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/images/all-containers-running.png)
         * Screenshot of some containers not running
-        * ![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/partial-running-containers.png)
+        * ![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/images/partial-running-containers.png)
    6. If all containers are up & running, you can go ahead and create some data by calling the APIs below
        * POST API - http://localhost:18080/createEmployee
        * POST API Request Body
@@ -56,12 +56,12 @@ This is a Springboot application running on docker
 [pgAdmin](https://www.pgadmin.org/) is a commonly used database management tool in the PostgresDB community. It simplifies the creation, maintenance, and use of database objects by offering a clean and intuitive user interface.
    1. pgAdming takes time to boot up
    2. You monitor and confirm it's readiness by looking at the pgadming-container logs as below
-       * This is how logs will look like when pgAdmin container is ready for usage ![This is how logs will look like when pgAdmin container is ready for usage](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/pgadmin-startup-logs.png)
-   3. We have preloaded the servers on to pgAdmin by using environment variable PGADMIN_SERVER_JSON_FILE and supplied servers [here](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/src/main/resources/postgres-servers.json)
+       * This is how logs will look like when pgAdmin container is ready for usage ![This is how logs will look like when pgAdmin container is ready for usage](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/images/pgadmin-startup-logs.png)
+   3. We have preloaded the servers on to pgAdmin by using environment variable PGADMIN_SERVER_JSON_FILE and supplied servers [here](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/src/main/resources/postgres-servers.json)
    4. We are using default password as "changeme" to login to postgres database
    5. You can login to pgadming at http://localhost:5050/browser/ and browse as below
 
-![Browser pgAdming](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/pgadmin-browser.png)
+![Browser pgAdming](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/images/pgadmin-browser.png)
 
 # PostgreSQL Username & Passwords
   * Username: postgres
@@ -97,11 +97,11 @@ We are supplying enviornment variables required for preloading servers
 This service will load postgre image and start the container running postgres database
 
 # Docker Images
-  1. springboot-postgres-pgadim-docker
+  1. springboot-postgres-pgadmin-docker
   2. pgadmin4   
   3. postgres
 
-  ![Docker Images](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/docker-downloaded-images.png)
+  ![Docker Images](https://github.com/Johny-Ch/springboot-postgres-pgadmin-docker/blob/main/images/docker-downloaded-images.png)
 
 # References
    * https://docs.docker.com/develop/develop-images/multistage-build/

@@ -4,9 +4,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.learning.docker</groupId>
-	<artifactId>springboot-postgres-pgadim-docker</artifactId>
+	<artifactId>springboot-postgres-pgadmin-docker</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>springboot-postgres-pgadim-docker</name>
+	<name>springboot-postgres-pgadmin-docker</name>
 	<description>This is a Springboot application connecting to PostgreSQL run on docker compose with pgadmin</description>
 
 	<parent>

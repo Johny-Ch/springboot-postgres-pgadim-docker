@@ -2,7 +2,7 @@ version: '2'
 
 services:
   restapi:
-    image: 'springboot-postgres-pgadim-docker:latest'
+    image: 'springboot-postgres-pgadmin-docker:latest'
     build:
       context: ""
       dockerfile: Dockerfile-restapi
