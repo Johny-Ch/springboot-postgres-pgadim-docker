@@ -24,8 +24,10 @@ This is a Springboot application
    4. Execute all services by clicking on two green arrows at line 3 in  [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/docker-compose.yml) file - this is nothing but executing docker-compose up
       ![Execute all services](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/docker-compose.yml.png)
    5. Verify if all the containers are up & running on you docker desktop, you see something like this
-        * All Containers Running: ![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/all-containers-running.png)
-        * Some Containers Not Running: ![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/partial-running-containers.png)
+        * All Containers Running: 
+        * ![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/all-containers-running.png)
+        * Some Containers Not Running: 
+        * ![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/partial-running-containers.png)
    6. If all containers are up & running, you can go ahead and create some data by calling the APIs below
        * POST API - http://localhost:18080/createEmployee
        * POST API Request Body
@@ -64,33 +66,33 @@ This is a Springboot application
   * Username: postgres
   * Password: changeme
 
-#Dockerfiles
+# Dockerfiles
 We have two docker files in this application
     1. Dockerfile-restapi
     2. Dockerfile-pgadmin
 
-##Dockerfile-restapi
+## Dockerfile-restapi
 This file is used to run the maven build by copying the src directory containing all the java code and pom.xml file
 The next section in this file loads JDK and copies the generated jar file as application.jar and then it is launched
 
-##Dockerfile-pgadmin
+## Dockerfile-pgadmin
 This file is used to load pgadmin docker image and copy the postgres-servers.json on to container at /pgadmin4/servers.json
 
-#Docker compose
+# Docker compose
 The docker compose file contains 3 services
     1. restapi
     2. pgadmin
     3. postgres
 
-##restapi
+## restapi
 This service will invoke the Dockerfile-restapi and is dependent on postgres
 We are supplying enviornment variables required for loading postgres database
 
-##pgadmin
+## pgadmin
 This service will invoke the Dockerfile-pgadmin and is dependent on postgres
 We are supplying enviornment variables required for preloading servers
 
-##postgres
+## postgres
 This service will load postgre image and start the container running postgres database
 
 # Docker Images
