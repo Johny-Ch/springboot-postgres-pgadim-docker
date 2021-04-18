@@ -25,9 +25,9 @@ This is a Springboot application
       ![Execute all services](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/docker-compose.yml.png)
    5. Verify if all the containers are up & running on you docker desktop, you see something like this
         * Screenshot of all containers running
-        ![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/all-containers-running.png)
+![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/all-containers-running.png)
         * Screenshot of some containers not running
-        ![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/partial-running-containers.png)
+![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/partial-running-containers.png)
    6. If all containers are up & running, you can go ahead and create some data by calling the APIs below
        * POST API - http://localhost:18080/createEmployee
        * POST API Request Body
