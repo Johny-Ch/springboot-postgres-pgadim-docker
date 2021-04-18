@@ -1,5 +1,5 @@
 # springboot-postgres-pgadim-docker
-This is a Springboot application 
+This is a Springboot application running on docker
   * Contains a GET & POST APIs to create and read employees with first & last name fields
       *   POST API can be used to create employee with fields "firstName" & "lastName"
       *   GET API can be used to get all employees stored
