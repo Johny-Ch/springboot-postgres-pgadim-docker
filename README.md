@@ -21,13 +21,13 @@ This is a Springboot application
    1. Clone the main branch of the project on to your working environment, [clone url](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker.git)
    2. Open cloned project in Intellij
    3. Open [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/docker-compose.yml) file
-   4. Execute all services by clicking on two green arrows at line 3 in  [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/docker-compose.yml) file - this is nothing but executing docker-compose up
+   4. Execute all services by clicking on two green arrows at line 3 in  [docker-compose.yml](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/docker-compose.yml) file - aka `docker-compose up`
       ![Execute all services](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/docker-compose.yml.png)
    5. Verify if all the containers are up & running on you docker desktop, you see something like this
-        * All Containers Running: 
-        * ![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/all-containers-running.png)
-        * Some Containers Not Running: 
-        * ![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/partial-running-containers.png)
+        * Screenshot of all containers running
+        ![All Containers Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/all-containers-running.png)
+        * Screenshot of some containers not running
+        ![Some Containers Not Running](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/partial-running-containers.png)
    6. If all containers are up & running, you can go ahead and create some data by calling the APIs below
        * POST API - http://localhost:18080/createEmployee
        * POST API Request Body
@@ -60,7 +60,8 @@ This is a Springboot application
    3. We have preloaded the servers on to pgAdmin by using environment variable PGADMIN_SERVER_JSON_FILE and supplied servers [here](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/src/main/resources/postgres-servers.json)
    4. We are using default password as "changeme" to login to postgres database
    5. You can login to pgadming at http://localhost:5050/browser/ and browse as below
-      ![Browser pgAdming](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/pgadmin-browser.png)
+
+![Browser pgAdming](https://github.com/Johny-Ch/springboot-postgres-pgadim-docker/blob/main/images/pgadmin-browser.png)
 
 # PostgreSQL Username & Passwords
   * Username: postgres
